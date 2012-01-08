@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.thefestfl.android" android:versionCode="16" android:versionName="1.2.1">
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7"></uses-sdk>
+
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <uses-library android:name="com.google.android.maps" />
+        <activity android:name=".TheFest10"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="ByBand"
+        		  android:label="Bands"
+        		  android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name="ByVenue"
+        		  android:label="Venues"
+        		  android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name="VenuePage" android:label="@string/app_name" android:screenOrientation="portrait"></activity>
+        
+        <activity android:name="ByDate"
+        		  android:label="@string/app_name"
+        		  android:theme="@android:style/Theme.NoTitleBar"
+        		  android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name="DateFriday" android:label="@string/app_name" android:screenOrientation="portrait"></activity>
+        <activity android:name="DateSat" android:label="@string/app_name" android:screenOrientation="portrait"></activity>
+		<activity android:name="DateSun" android:label="@string/app_name" android:screenOrientation="portrait"></activity>
+        
+        <activity android:name="BandPage"
+        		  android:label="Band"
+        		  android:theme="@android:style/Theme.NoTitleBar"
+        		  android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name="Schedule"
+        		  android:label="My Schedule"
+        		  android:screenOrientation="portrait"></activity>
+        		  
+        <activity android:name="FestMap"
+        		  android:label="Fest Map"
+        		  android:theme="@android:style/Theme.NoTitleBar"></activity>
+        
+        <activity android:name="Scheduler"
+        		  android:label="@string/app_name"
+        		  android:theme="@android:style/Theme.NoTitleBar"
+        		  android:screenOrientation="portrait">
+        </activity>
+            
+        <activity android:name="SchedFri" android:label="@string/app_name" android:screenOrientation="portrait"></activity>
+        <activity android:name="SchedSat" android:label="@string/app_name" android:screenOrientation="portrait"></activity>
+		<activity android:name="SchedSun" android:label="@string/app_name" android:screenOrientation="portrait"></activity>
+            
+    </application>
+</manifest>
